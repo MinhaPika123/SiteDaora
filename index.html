@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #foto1 {
+            text-align: center;
+            margin: auto;
+            display: none;
+        }
+        #foto2 {
+            text-align: center;
+            margin: auto;
+            display: none;
+        }
+        #foto3 {
+            text-align: center;
+            margin: auto;
+            display: none;
+        }
+        #foto4 {
+            text-align: center;
+            margin: auto;
+            display: none;
+        }
+        #foto5 {
+            text-align: center;
+            margin: auto;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="foto1">
+        <img src="foto1.jpeg" width="700px" alt="">
+    </div>
+    <div id="foto2">
+        <img src="foto2.jpeg" width="700px" alt="">
+    </div>
+    <div id="foto3">
+        <img src="foto3.jpeg" width="700px" alt="">
+    </div>
+    <div id="foto4">
+        <img src="foto4.jpg" width="700px" alt="">
+    </div>
+    <div id="foto5">
+        <img src="foto5.jpg" width="700px" alt="">
+    </div>
+</body>
+<script>
+    const pergunta = prompt("Qual o tamanho da sua Pika?").trim()
+    const foto1 = document.getElementById("foto1")
+    const foto2 = document.getElementById("foto2")
+    const foto3 = document.getElementById("foto3")
+    const foto4 = document.getElementById("foto4")
+    const foto5 = document.getElementById("foto5")
+
+    if (pergunta == 1) {
+        alert("Lupa sem X")
+        foto1.style.display = "block"
+    }
+    else if (pergunta == 2) {
+        alert("Sigma == Gabriel Brier")
+        foto2.style.display = "block"
+    }
+    else if (pergunta == 3) {
+        alert("Normal")
+        foto3.style.display = "block"
+    }
+    else if (pergunta == 4) {
+        alert("Bela Espada Mn")
+        foto4.style.display = "block"
+    }
+    else if(pergunta >= 5){
+        alert("Colossal")
+        foto5.style.display = "block"
+    }
+    window.location.reload()
+
+</script>
+
+</html>
